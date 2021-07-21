@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <form action="process.php">
+      <div>
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="message">Message</label><br />
+        <textarea
+          id="message"
+          name="message"
+          cols="30"
+          rows="5"
+          placeholder="Enter few words..."
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male" selected>Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday</label><br />
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+
+      <div>
+        <label for="membership">Membership</label>
+
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="simple"
+        />simple
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="stand"
+          checked
+        />standard
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="super"
+        />super
+      </div>
+
+      <div>
+        <label for="hobbies">Hobbies</label>
+
+        <input
+          type="checkbox"
+          name="hobby"
+          id="hobby"
+          value="football"
+        />Football
+        <input
+          type="checkbox"
+          name="hobby"
+          id="hobby"
+          value="basketball"
+          checked
+        />Basketball
+        <input
+          type="checkbox"
+          name="hobby"
+          id="hobby"
+          value="volleyball"
+        />Volleyball
+      </div>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
