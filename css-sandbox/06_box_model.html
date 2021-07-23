@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model / Margin & Padding</title>
+    <style>
+      .box {
+        background: #f4f4f4;
+        border: 2px #777 solid;
+        width: 500px;
+        /* Padding all sides */
+        padding: 20px;
+
+        /* Padding per side */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        /* Padding shorthand => top right bottom left */
+        padding: 10px 20px 10px 20px;
+
+        /* Padding shorthand => top/bottom left/right */
+        padding: 10px 20px;
+
+        /* Same with margin */
+        margin: 20px;
+      }
+
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      h3 {
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus minima
+        autem debitis rem ipsam. Corporis officiis expedita tempora enim minus
+        maiores placeat dolor reiciendis voluptas dicta officia in aut nulla,
+        porro sint cum accusantium, adipisci at commodi laudantium. Mollitia
+        nesciunt dolorum odit numquam, quia sit esse perferendis aliquclass modi
+        nemo.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box 2</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus minima
+        autem debitis rem ipsam. Corporis officiis expedita tempora enim minus
+        maiores placeat dolor reiciendis voluptas dicta officia in aut nulla,
+        porro sint cum accusantium, adipisci at commodi laudantium. Mollitia
+        nesciunt dolorum odit numquam, quia sit esse perferendis aliquid modi
+        nemo.
+      </p>
+    </div>
+    <a href="07_float_align.html">07_float_align</a>
+  </body>
+</html>

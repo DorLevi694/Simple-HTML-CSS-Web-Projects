@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline & Block Display Styling</title>
+    <script>
+      console.log(`outerWidth: ${outerWidth}`);
+      console.log(`innerWidth: ${outerWidth - innerWidth}`);
+    </script>
+    <style>
+      li {
+        display: inline;
+      }
+
+      li a {
+        padding-right: 20px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      .space {
+        background-color: lightskyblue;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        width: 32.8%;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <ul class="side-menu">
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+
+    <div class="space"></div>
+
+    <img src="images/leaf.png" alt="My Image" />
+    <div class="space"></div>
+
+    <div class="box">
+      <h3>Hading 3</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum pariatur
+        voluptas, sed incidunt aliquam illum qui placeat suscipit natus est!
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Hading 3</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
+        dolorum consectetur ratione molestias. Amet voluptatem tempora sint
+        fuga, porro sit.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Hading 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit
+        temporibus eum ullam aspernatur earum iusto tempora ratione deleniti
+        natus.
+      </p>
+    </div>
+  </body>
+</html>
