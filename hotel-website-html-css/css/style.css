@@ -1,0 +1,290 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Utilities classes */
+.colored-light {
+  color: #ffc037;
+}
+
+.colored-dark {
+  color: #996900;
+}
+
+.bg-light-colored {
+  background: #ffc037;
+  color: #000;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+/* nav bar */
+
+header {
+  background-color: #222;
+  width: 100%;
+}
+
+.nav-bar {
+  overflow: auto;
+  color: #fff;
+}
+
+.nav-bar ul li {
+  float: right;
+  padding: 20px 25px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-bar ul li:first-child {
+  float: left;
+  font-weight: bold;
+}
+
+.nav-bar ul li:first-child:hover {
+  background-color: #222;
+}
+
+.nav-bar ul li:hover,
+.current {
+  background-color: #333;
+  color: #ffc037;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* top section */
+.top-section {
+  background-image: url(../images/lobby1.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+}
+.top-section h1 {
+  font-size: 60px;
+  padding-top: 40px;
+}
+
+.top-section p {
+  font-size: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  text-justify: center;
+  display: block;
+  margin: 150px auto;
+  padding: 15px;
+  width: 120px;
+  height: 60px;
+  background-color: rgba(102, 102, 102, 0.734);
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(60, 60, 60, 0.734);
+  color: #ffc037;
+}
+
+/* mid-section */
+.mid-section {
+  color: inherit;
+  overflow: hidden;
+}
+.mid-section .mid-left {
+  background-image: url(../images/lobby2.jpg);
+}
+
+.mid-section .mid-right {
+  background-image: url(../images/bell.jpg);
+  text-align: center;
+  color: #fff;
+}
+.mid-section .mid-right h3 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.mid-section .mid-right button {
+  background-color: #dadada7b;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  margin: 50px auto;
+}
+
+.mid-section .mid-right button:hover {
+  background-color: #dadadaad;
+  color: #ffc037;
+}
+.mid-section .mid-box {
+  width: 50%;
+  height: 350px;
+  background-size: 100% 100%;
+  float: left;
+}
+
+/*  bottom-section */
+
+.bottom-section {
+  overflow: hidden;
+}
+
+.box-bottom {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 50px;
+}
+
+.box-bottom i {
+  padding: 20px;
+}
+
+.box-bottom h3 {
+  padding-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+}
+
+.about-main {
+  overflow: hidden;
+  padding: 30px;
+}
+
+.about-main .text-area {
+  float: left;
+  width: 60%;
+  padding: 40px;
+  line-height: 1.6em;
+  font-size: 18px;
+}
+
+.about-main .text-area h3 {
+  font-size: 50px;
+  padding-bottom: 35px;
+}
+
+.about-main .round-img {
+  float: right;
+  display: block;
+  background-image: url(../images/stairs.jpg);
+  margin: auto;
+  width: 40%;
+  height: 350px;
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.about-bottom {
+  background-image: url(../images/lobby1.jpg);
+  background-size: 100% 100%;
+}
+
+.about-bottom h3 {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.about-bottom article {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.about-bottom article .face-img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  float: left;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.about-bottom article p {
+  padding: 30px;
+}
+
+.clr {
+  clear: both;
+}
+
+.form-section {
+  display: block;
+  margin: 30px auto;
+  line-height: 1.6em;
+  width: 350px;
+}
+
+.form-section h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 20px;
+}
+
+.form-section .form-group input,
+textarea {
+  width: 100%;
+  padding: 8px;
+}
+.form-section #submit-btn {
+  margin: 20px auto;
+  width: 100px;
+  height: 50px;
+}
