@@ -194,6 +194,8 @@ footer {
   padding: 5px;
 }
 
+/* About Page */
+
 .about-main {
   overflow: hidden;
   padding: 30px;
@@ -208,7 +210,7 @@ footer {
 }
 
 .about-main .text-area h3 {
-  font-size: 50px;
+  font-size: 40px;
   padding-bottom: 35px;
 }
 
