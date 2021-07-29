@@ -1,0 +1,122 @@
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+.p-3 {
+  padding: 30px;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-color {
+  color: orange;
+}
+
+.primary-color {
+  color: green;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.h-xl {
+  font-size: 3rem;
+}
+
+.h-l {
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #333;
+}
+.btn-green {
+  background-color: green;
+  color: #fff;
+}
+.btn-no-bg {
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #fff;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+.bg-green {
+  background: green;
+}
+
+.img-row {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-row img {
+  width: 50%;
+}
+
+.img-row .other-area {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  line-height: 1.8rem;
+}
+
+.img-row .other-area a,
+.a {
+  max-width: 200px;
+}
+.img-box-4 {
+  margin: 1vh;
+  width: 23vw;
+  height: 23vh;
+  cursor: pointer;
+}
+
+.img-box-4:hover {
+  opacity: 0.75;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}

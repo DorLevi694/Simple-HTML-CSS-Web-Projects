@@ -1,0 +1,85 @@
+@media (max-width: 768px) {
+  header > nav {
+    width: 100%;
+  }
+
+  header > .flex-row {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    height: 90px;
+  }
+
+  header nav a {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  header > .header-text {
+    padding: 20px 20px;
+  }
+
+  #about .icons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #about .icons > div {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .img-row {
+    flex-direction: column;
+    height: 100%;
+    /* flex: 100%; */
+    width: 100%;
+  }
+
+  .img-row img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .img-row .other-area {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 30px;
+  }
+
+  #cases div {
+    line-height: 2.6rem;
+  }
+
+  #cases .images-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cases .images-container img {
+    padding-bottom: 10px;
+    width: 90%;
+    height: 90%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  #contact .form-wrap {
+    background-color: chartreuse;
+    height: fit-content;
+    line-height: 2.8rem;
+    width: 100%;
+  }
+
+  #contact .form-wrap input {
+    padding: 10px 10px;
+    width: 300px;
+  }
+}

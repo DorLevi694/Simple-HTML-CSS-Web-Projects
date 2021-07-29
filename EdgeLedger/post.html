@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Our Blog</title>
+    <script
+      src="https://kit.fontawesome.com/14e8bf268e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <style></style>
+  </head>
+
+  <body id="home">
+    <header class="blog">
+      <nav id="navbar" class="flex-row bg-dark top">
+        <a href="index.html#home" class="logo">
+          <h1>
+            <span class="primary-color"
+              ><i class="fas fa-book-open"></i> Edge</span
+            >Ledger
+          </h1>
+        </a>
+        <ul class="flex-row">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="header-text">
+        <h1 class="h-xl">Blog</h1>
+      </section>
+    </header>
+
+    <section>
+      <article class="main-post">
+          <h2 class="h-l">Blog Post BLA BLA</h2>
+          <h5>
+            <i class="fas fa-user-alt"></i> Posted by Dor Levi | October 5 2021
+          </h5>
+          <div class="post-text">
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rerum
+            reprehenderit sunt fuga perferendis, dolorem dignissimos modi nemo
+            libero aperiam iste animi, eius vero iure similique cupiditate quia
+            exercitationem, labore temporibus culpa impedit et eveniet
+            voluptatibus? Ab numquam, exercitationem debitis quia repellendus
+            nihil magnam? Voluptatibus rerum consequuntur sed sint quidem.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            earum voluptates quis odio labore commodi voluptatibus dolorem animi
+            similique pariatur?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            nisi corrupti iure maxime reprehenderit alias?
+          </p>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+      <div class="flex-items-centered flex-row">
+        <i class="fab fa-2x fa-facebook"></i>
+        <i class="fab fa-2x fa-twitter"></i>
+        <i class="fab fa-2x fa-youtube"></i>
+        <i class="fab fa-2x fa-linkedin"></i>
+        <i class="fab fa-2x fa-github"></i>
+      </div>
+      <p>
+        Copyright &copy; 2021 -
+        <span class="primary-color"> <i class="fas fa-book-open"></i> Edge</span
+        >Ledger
+      </p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = ()=>{
+        if(window.pageYOffset > 100){
+          navbar.classList.remove('top');
+          if(!scrolled){
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(()=>{
+            navbar.style.transform = 'translateY(0px)';
+            scrolled=true;
+          },200 );
+        }
+        else{
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      }
+    </script>
+  </body>
+</html>
