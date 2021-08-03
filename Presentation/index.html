@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/14e8bf268e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Presentation</title>
+    <style></style>
+  </head>
+  <body>
+    <section id="page-1" class="page">
+      <div class="container">
+        <h1>Welcome To My Presentation</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem voluptatibus necessitatibus quod dignissimos et ipsam
+          reiciendis laudantium cumque dolorum enim?
+        </p>
+        <a href="#page-2" class="btn"
+          >Next <i class="fas fa-arrow-circle-down"> </i>
+        </a>
+      </div>
+    </section>
+    <section id="page-2" class="page">
+      <div class="container">
+        <h1>Page 2</h1>
+        <p>
+          Qui atque, eaque aliquid excepturi corporis quas nulla dolores?
+          Excepturi quibusdam beatae ea, accusamus ipsum minima cupiditate optio
+          similique. Magni!
+        </p>
+        <div class="flex-row">
+          <a href="#page-1" class="btn"
+            >Previous <i class="fas fa-arrow-circle-up"></i>
+          </a>
+          <a href="#page-3" class="btn"
+            >Next <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="page-3" class="page">
+      <div class="container">
+        <h1>Page 3</h1>
+        <p>
+          Qui atque, eaque aliquid excepturi corporis quas nulla dolores?
+          Excepturi quibusdam beatae ea, accusamus ipsum minima cupiditate optio
+          similique. Magni!
+        </p>
+        <div class="flex-row">
+          <a href="#page-2" class="btn"
+            >Previous <i class="fas fa-arrow-circle-up"></i
+          ></a>
+          <a href="#page-4" class="btn"
+            >Next <i class="fas fa-arrow-circle-down"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="page-4" class="page">
+      <div class="container">
+        <h1>Page 4</h1>
+        <p>
+          Qui atque, eaque aliquid excepturi corporis quas nulla dolores?
+          Excepturi quibusdam beatae ea, accusamus ipsum minima cupiditate optio
+          similique. Magni!
+        </p>
+        <div class="flex-row">
+          <a href="#page-3" class="btn"
+            >Previous <i class="fas fa-arrow-circle-up"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Smooth Scrolling   //copied
+      $("a").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
