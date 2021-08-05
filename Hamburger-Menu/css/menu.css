@@ -51,6 +51,10 @@
 	transform: scale(1);
 }
 
+.menu-wrap .toggler:checked ~ .menu {
+	visibility: visible;
+}
+
 .menu-wrap .menu {
 	position: fixed;
 	top: 0;
@@ -65,6 +69,7 @@
 	text-align: center;
 	z-index: -1;
 	overflow: hidden;
+	visibility: hidden;
 }
 
 .menu-wrap .menu > div > div {
@@ -80,7 +85,6 @@
 	border-radius: 50%;
 	visibility: hidden;
 	transition: all 1.2s ease 0.5s;
-
 	z-index: 1;
 }
 /* big div */
@@ -112,6 +116,6 @@
 	color: var(--mark-color);
 }
 
-a:checked{
+a:checked {
 	background-color: midnightblue;
 }
