@@ -84,6 +84,7 @@ li {
 	color: var(--light-color);
 	font-weight: bolder;
 	transition: all 0.25s ease-in-out;
+	z-index: 3;
 }
 
 #showcase .btn:hover {
