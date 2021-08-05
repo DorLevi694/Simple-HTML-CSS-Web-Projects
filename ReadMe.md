@@ -1,4 +1,21 @@
-This Repository will contain projects and some simples samples.
+## **Author: Dor Levi**
 
-From Html5 & Css course :
-"Modern HTML & CSS From The Beginning"
+### **This Repository contains a few projects and simple code samples of practice.**
+
+### From Html5 & Css course :
+
+## 'Modern HTML & CSS From The Beginning'
+
+### Link to my git repository : [_Simple-HTML-CSS-Web-Projects_](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects)
+
+---
+
+## The full projects that I did through this course
+
+- [x] [**Hotel Website**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/hotel-website-html-css)
+
+- [x] [**_EdgeLedger Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/EdgeLedger)
+
+- [x] [**_Presentation Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Presentation)
+
+- [ ] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Hamburger-Menu)
