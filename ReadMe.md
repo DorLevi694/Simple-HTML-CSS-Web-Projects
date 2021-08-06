@@ -18,4 +18,6 @@
 
 - [x] [**_Presentation Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Presentation)
 
-- [ ] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Hamburger-Menu)
+- [x] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Hamburger-Menu)
+
+- [x] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/TimeLine)
