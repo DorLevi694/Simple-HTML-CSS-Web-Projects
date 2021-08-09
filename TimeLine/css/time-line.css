@@ -20,14 +20,6 @@ to use this time line read readme- include css stylesheet in html and use this s
 
 /* Time Line */
 
-:root {
-	--primary-color: #425b84;
-	--secondary-color: #5b7bb4;
-	--dark-color: #333;
-	--light-color: #fff;
-	--max-width: 1100px;
-}
-
 /* white line   */
 .timeline::before {
 	content: ' ';
@@ -57,6 +49,7 @@ to use this time line read readme- include css stylesheet in html and use this s
 	list-style: none;
 	width: 50%;
 	margin-bottom: 60px;
+	transition: all 0.5s ease-in-out;
 	position: relative;
 }
 
@@ -81,13 +74,18 @@ to use this time line read readme- include css stylesheet in html and use this s
 	padding: 20px;
 	transition: all 0.5s ease-in-out;
 	background-color: var(--secondary-color);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) .item {
 	border-radius: 3px 3px 3px 0px;
+	transform: translateX(+200px);
 }
 
 .timeline ul li:nth-child(even) .item {
+	transform: translateX(-200px);
 	border-radius: 3px 3px 0 3px;
 }
 
@@ -99,8 +97,8 @@ to use this time line read readme- include css stylesheet in html and use this s
 	width: 25px;
 	height: 25px;
 	position: absolute;
-	background-color: var(--secondary-color);
-	transition: background 0.5s ease-in-out;
+	background-color: var(--light-color);
+	transition: background 0.75s ease-in-out;
 	border-radius: 50%;
 }
 
@@ -121,6 +119,7 @@ to use this time line read readme- include css stylesheet in html and use this s
 	height: 0px;
 	bottom: 5px;
 	border-style: solid;
+	opacity: 0;
 	/* background-color: teal; */
 }
 
@@ -131,11 +130,28 @@ to use this time line read readme- include css stylesheet in html and use this s
 }
 
 .timeline ul li:nth-child(even) .mark::before {
-	/* left: 0px; */
 	border-width: 8px 0 8px 16px;
 	border-color: transparent transparent transparent var(--secondary-color);
 }
 
+/* Show effect */
+
+.timeline ul li:nth-child(odd).show .item,
+.timeline ul li:nth-child(even).show .item {
+	transform: none;
+	visibility: visible;
+	opacity: 1;
+}
+
+/* .timeline ul li.show .mark::before, */
+.timeline ul li.show .mark::before {
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+
+.timeline ul li.show::after {
+	background-color: var(--secondary-color);
+}
 @media (max-width: 750px) {
 	/* White line */
 	.timeline ul li .item {
@@ -165,7 +181,6 @@ to use this time line read readme- include css stylesheet in html and use this s
 
 	.timeline ul li:nth-child(odd) {
 		padding-right: 10px;
-		/* background-color: lightslategray; */
 	}
 
 	.timeline ul li:nth-child(even) {
@@ -173,7 +188,6 @@ to use this time line read readme- include css stylesheet in html and use this s
 		padding-left: 0px;
 		flex-direction: row;
 		align-self: flex-end;
-		/* background-color: lawngreen; */
 	}
 	/* Dot */
 	.timeline ul li:nth-child(even)::after {
