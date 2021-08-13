@@ -1,0 +1,84 @@
+:root {
+	--dark-color: #333;
+	--light-color: #fff;
+	--light-grey-color: #f4f4f4;
+	--grey-color: #ddd;
+	--dark-grey-color: #ccc;
+	--primary-color: rgb(255, 115, 0);
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	color: var(--dark-color);
+	/* font-weight: bold; */
+	font-weight: 600;
+	font-family: Arial, Helvetica, sans-serif;
+}
+header {
+	background-color: red;
+}
+header .navbar {
+	background-color: lightgreen;
+}
+
+.main-area {
+	background-color: var(--primary-color);
+	height: 80%;
+}
+
+footer {
+	color: var(--dark-color);
+	background-color: rgba(178, 49, 32, 0.267);
+	text-align: center;
+	padding: 20px;
+}
+
+.navbar > ul {
+	background-color: var(--light-grey-color);
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar > ul > li.list {
+	list-style: none;
+	text-align: center;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.navbar > ul > li.list:hover {
+	background-color: var(--primary-color);
+	color: var(--light-color);
+	cursor: pointer;
+}
+
+.navbar > ul > li.list > ul.drop-down-list {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	flex-direction: column;
+	background-color: var(--grey-color);
+	/* opacity: 0.8; */
+}
+
+.navbar > ul > li.list:hover > ul.drop-down-list {
+	display: flex;
+	color: var(--dark-color);
+}
+
+.navbar > ul > li.list > ul.drop-down-list > li {
+	list-style: none;
+	padding: 15px 15px;
+	width: 150px;
+}
+
+.navbar > ul > li.list > ul.drop-down-list > li:hover {
+	background-color: var(--dark-grey-color);
+}
