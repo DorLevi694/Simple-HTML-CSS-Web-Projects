@@ -4,19 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/14e8bf268e.js"
+			crossorigin="anonymous"
+		></script>
+
 		<link rel="stylesheet" href="css/style.css" />
 		<title>CSS Dropdown Menu</title>
 	</head>
-	<style></style>
 	<body>
 		<header>
 			<nav class="navbar">
 				<ul>
-					<li class="list">Home</li>
+					<li class="list"><a href="#1">Home</a></li>
 
-					<li class="list">about</li>
+					<li class="list"><a href="#">About</a></li>
 					<li class="list">
-						Services
+						Services <i class="fas fa-angle-down"></i>
 						<ul class="drop-down-list">
 							<li>Item 1</li>
 							<li>Item 2</li>
@@ -25,15 +29,15 @@
 						</ul>
 					</li>
 					<li class="list">
-						Blog
+						Blog <i class="fas fa-angle-down"></i>
 						<ul class="drop-down-list">
 							<li>Item 1</li>
 							<li>Item 2</li>
 							<li>Item 3</li>
-							<li>Item 4</li>
+							<li>Item 4 <span class="circle">New</span></li>
 						</ul>
 					</li>
-					<li class="list">Contact</li>
+					<li class="list"><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
