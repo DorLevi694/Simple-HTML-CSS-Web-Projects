@@ -20,4 +20,8 @@
 
 - [x] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Hamburger-Menu)
 
-- [x] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/TimeLine)
+- [x] [**_Time Line_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/TimeLine)
+
+- [x] [**_DropDown Bar_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/DropDownBar)
+
+- [ ] **_News Website_**
