@@ -162,9 +162,18 @@ footer > #footer-area {
 }
 
 #footer-area > div {
-	border-radius: 2px;
 	gap: 0.5rem;
 	padding: 1rem;
+	grid-template-columns: 1fr;
+}
+
+#footer-area > div > form {
+	display: grid;
+	gap: 0.5rem;
+}
+
+#footer-area > div > form > input[type='text'] {
+	padding-left: 5px;
 }
 
 #footer-area .logo {
