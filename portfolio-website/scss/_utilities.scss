@@ -1,0 +1,147 @@
+@import 'config';
+
+.container {
+	max-width: $website-width;
+	padding: 0 1.5rem;
+	margin: auto;
+}
+
+.p {
+	&-1 {
+		padding: 1rem;
+	}
+
+	&-2 {
+		padding: 2rem;
+	}
+
+	&-3 {
+		padding: 3rem;
+	}
+}
+
+.py {
+	&-1 {
+		padding: 1rem 0;
+	}
+
+	&-2 {
+		padding: 2rem 0;
+	}
+
+	&-3 {
+		padding: 3rem 0;
+	}
+}
+
+.m {
+	&-1 {
+		margin: 1rem;
+	}
+
+	&-2 {
+		margin: 2rem;
+	}
+
+	&-3 {
+		margin: 3rem;
+	}
+}
+.btn {
+	@extend .m-1;
+	padding: 0.8rem 0.8rem;
+	cursor: pointer;
+	border: none;
+
+	&:hover {
+		opacity: 0.8;
+		background-color: $main-color;
+	}
+}
+
+.f {
+	&-1 {
+		font-size: 1rem;
+	}
+	&-2 {
+		font-size: 1.2rem;
+	}
+	&-3 {
+		font-size: 1.5rem;
+	}
+	&-4 {
+		font-size: 1.8rem;
+	}
+	&-5 {
+		font-size: 2rem;
+	}
+}
+
+.main-color {
+	color: $main-color;
+}
+.light-color {
+	color: $light-color;
+}
+.medium-color {
+	color: $medium-color;
+}
+.dark-color {
+	color: $dark-color;
+}
+.blue-color {
+	color: blue;
+}
+.yellow-color {
+	color: yellow;
+}
+.red-color {
+	color: red;
+}
+
+.bottom-line {
+	border-bottom: 3px $main-color solid;
+	border-radius: 50%;
+	margin: auto;
+	width: 50px;
+}
+
+.w {
+	&-100 {
+		font-weight: 100;
+	}
+	&-200 {
+		font-weight: 200;
+	}
+	&-300 {
+		font-weight: 300;
+	}
+	&-400 {
+		font-weight: 400;
+	}
+	&-500 {
+		font-weight: 500;
+	}
+	&-600 {
+		font-weight: 600;
+	}
+	&-700 {
+		font-weight: 700;
+	}
+	&-800 {
+		font-weight: 800;
+	}
+	&-900 {
+		font-weight: 900;
+	}
+}
+
+.section-title {
+	font-weight: 900;
+	font-size: 2rem;
+}
+.lead,
+.section-small-title {
+	font-weight: 400;
+	font-size: 1.3rem;
+}
