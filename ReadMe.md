@@ -24,4 +24,6 @@
 
 - [x] [**_DropDown Bar_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/DropDownBar)
 
-- [ ] **_News Website_**
+- [x] [**_News Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/news-website)
+
+- [x] [**_Portfolio Website(Fake)_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/portfolio-website)
