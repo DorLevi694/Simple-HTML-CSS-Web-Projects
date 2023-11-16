@@ -55,17 +55,6 @@
 		margin: 3rem;
 	}
 }
-.btn {
-	@extend .m-1;
-	padding: 0.8rem 0.8rem;
-	cursor: pointer;
-	border: none;
-
-	&:hover {
-		opacity: 0.8;
-		background-color: $main-color;
-	}
-}
 
 .f {
 	&-1 {
@@ -156,4 +145,27 @@
 
 .italic {
 	font-style: italic;
+}
+
+.btn {
+	@extend .m-1;
+	@extend .w-700;
+	padding: 0.8rem 0.8rem;
+	cursor: pointer;
+	border: none;
+
+	&:hover {
+		opacity: 0.8;
+		background-color: $main-color;
+	}
+
+	&-dark {
+		background-color: $dark-color;
+		color: $light-color;
+		&:hover {
+			opacity: 0.8;
+			background-color: $main-color;
+			color: $dark-color;
+		}
+	}
 }

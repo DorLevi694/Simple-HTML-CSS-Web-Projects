@@ -32,12 +32,21 @@ h4 {
 img {
 	width: 100%;
 }
+#header-contact,
 #header-work,
 #header-home,
 #header-about {
 	background: $bg-image no-repeat center right / cover;
 	display: grid;
 	padding-top: 1rem;
+}
+
+#header-about > div,
+#header-work > div,
+#header-contact > div {
+	display: grid;
+	width: 100%;
+	height: 10vh;
 }
 
 #header-home > div {
@@ -97,115 +106,118 @@ img {
 	border-bottom: solid;
 }
 
-#home-a {
-	padding-top: 20px;
-	text-align: center;
-	display: grid;
-	grid-template-rows: auto auto;
-	i {
-		color: $main-color;
-	}
-
-	.icons-titles {
-		// font-size: 1.3rem;
-		// font-weight: 600;
-		padding-bottom: 30px;
-	}
-
-	.icons {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 25px;
+// Home page
+#home {
+	&-a {
+		padding-top: 20px;
 		text-align: center;
-		text-justify: auto;
-		padding-bottom: 20px;
-	}
-}
-
-#home-b {
-	@extend .py-2;
-	@extend .f-2;
-	font-weight: 900;
-	display: grid;
-
-	.projects {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-
-		justify-items: center;
-		text-align: center;
-
-		// i {
-		// 	color: $main-color;
-		// }
-		div {
-			@extend .py-1;
-			width: 100%;
-
-			&:nth-child(even) {
-				background: $light-color;
-			}
-			&:nth-child(odd) {
-				background: $medium-color;
-			}
-		}
-	}
-}
-
-#home-c {
-	display: grid;
-	grid-template-rows: auto auto auto auto;
-	align-items: center;
-	text-align: center;
-	padding: 2rem;
-
-	.home-c-icons {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		align-items: center;
-		gap: 1.3rem;
-		padding-top: 1rem;
-	}
-	i {
-		position: relative;
-		background: $dark-color;
-		color: $light-color;
-		font-size: 1.8rem;
-		// padding: 2rem;
-		width: 85px;
-		height: 85px;
-		line-height: 85px;
-		text-align: center;
-		border-radius: 50%;
-		transition: all 0.5s;
-		&:hover {
-			background-color: $main-color;
-			// transition: all 0.5s;
-			// width: 95px;
-			// height: 95px;
-			// line-height: 95px;
-			> div {
-				background-color: $dark-color;
-				background-color: $dark-color;
-				// transition: all 0.5s;
-				// width: 40px;
-				// height: 40px;
-				// line-height: 40px;
-			}
+		grid-template-rows: auto auto;
+		i {
+			color: $main-color;
 		}
 
-		.highlight-number {
-			position: absolute;
-			top: 0;
-			right: 0;
-			font-size: 20px;
-			background-color: $main-color;
-			border-radius: 50%;
+		.icons-titles {
+			// font-size: 1.3rem;
+			// font-weight: 600;
+			padding-bottom: 30px;
+		}
+
+		.icons {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 25px;
 			text-align: center;
-			width: 30px;
-			height: 30px;
-			line-height: 30px;
-			transition: all 1s;
+			text-justify: auto;
+			padding-bottom: 20px;
+		}
+	}
+
+	&-b {
+		@extend .py-2;
+		@extend .f-2;
+		font-weight: 900;
+		display: grid;
+
+		.projects {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			justify-items: center;
+			text-align: center;
+
+			// i {
+			// 	color: $main-color;
+			// }
+			div {
+				@extend .py-1;
+				width: 100%;
+
+				&:nth-child(even) {
+					background: $light-color;
+				}
+				&:nth-child(odd) {
+					background: $medium-color;
+				}
+			}
+		}
+	}
+
+	&-c {
+		display: grid;
+		grid-template-rows: auto auto auto auto;
+		align-items: center;
+		text-align: center;
+		padding: 2rem;
+
+		.home-c-icons {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			align-items: center;
+			gap: 1.3rem;
+			padding-top: 1rem;
+		}
+		i {
+			position: relative;
+			background: $dark-color;
+			color: $light-color;
+			font-size: 1.8rem;
+			// padding: 2rem;
+			width: 85px;
+			height: 85px;
+			line-height: 85px;
+			text-align: center;
+			border-radius: 50%;
+			transition: all 0.5s;
+			&:hover {
+				background-color: $main-color;
+				// transition: all 0.5s;
+				// width: 95px;
+				// height: 95px;
+				// line-height: 95px;
+				> div {
+					background-color: $dark-color;
+					background-color: $dark-color;
+					// transition: all 0.5s;
+					// width: 40px;
+					// height: 40px;
+					// line-height: 40px;
+				}
+			}
+
+			.highlight-number {
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 20px;
+				background-color: $main-color;
+				border-radius: 50%;
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				transition: all 1s;
+			}
 		}
 	}
 }
@@ -253,14 +265,6 @@ footer {
 }
 
 // About page
-
-#header-about > div,
-#header-work > div {
-	display: grid;
-	width: 100%;
-	height: 10vh;
-}
-
 #about {
 	&-a {
 		padding: 2rem 2rem 0;
@@ -381,9 +385,11 @@ footer {
 	}
 }
 
-#work-main {
+// Work page
+#work {
 	display: grid;
 	text-align: center;
+	padding: 3rem 5rem 4rem 5rem;
 	.prev-main {
 		display: flex;
 		flex-direction: column;
@@ -391,7 +397,7 @@ footer {
 	.projects-example {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		// gap: 1rem;
+		gap: 1rem;
 
 		.one-project-example {
 			overflow: hidden;
@@ -431,5 +437,78 @@ footer {
 				}
 			}
 		}
+	}
+}
+// Contact page
+#contact {
+	&-body {
+		display: grid;
+		height: 100vh;
+		grid-template-rows: auto 1fr auto;
+	}
+	&-main {
+		display: grid;
+		height: 100%;
+		width: 100%;
+		grid-template-rows: 1fr auto auto;
+	}
+	&-form {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		gap: 2rem;
+		> form {
+			padding-top: 1.2rem;
+			display: grid;
+			grid-template-areas:
+				'name email'
+				'subject phone'
+				'message message';
+			gap: 1.6rem;
+
+			#form {
+				&-name {
+					grid-area: name;
+				}
+				&-email {
+					grid-area: email;
+				}
+				&-subject {
+					grid-area: subject;
+				}
+				&-phone {
+					grid-area: phone;
+				}
+				&-message {
+					grid-area: message;
+					height: 4rem;
+				}
+			}
+		}
+
+		> .btn-dark {
+			width: 50%;
+			padding: 0.5rem;
+			margin: 1.3rem 1rem 3rem;
+		}
+	}
+
+	&-info {
+		background-color: $dark-color;
+		color: $light-color;
+		padding: 0.5rem 0 1rem;
+		> div {
+			justify-items: center;
+			text-align: center;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	&-last-line {
+		text-align: center;
+		margin: auto;
+		background-color: $main-color;
+		height: 100%;
+		width: 100%;
 	}
 }
