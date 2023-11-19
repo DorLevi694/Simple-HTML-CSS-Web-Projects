@@ -14,9 +14,9 @@
 
 @media (max-width: 800px) {
 
-  #header-home {
-    height: 70vh;
-  }
+  // #header-home {
+  //   height: 70vh;
+  // }
 
 
 
@@ -136,7 +136,7 @@
   #about-d .testimonials .clients-say,
   #work .projects-example,
   #contact-main form,
-  // .about-logo,
+  #contact-main #contact-info .container,
   footer .container {
     display: flex;
     flex-direction: column;
@@ -146,6 +146,19 @@
   #about-a .intro .awards>div>div {
     padding: 0rem 0.5rem;
 
+  }
+
+  #contact-last-line {
+    font-size: 1.3rem;
+  }
+
+  #contact-main #contact-info .container {
+    gap: 1rem;
+
+    >div {
+      padding-bottom: 0.5rem;
+      border-bottom: $medium-color solid 0.5px;
+    }
   }
 
   footer {
@@ -165,4 +178,12 @@
       }
     }
   }
+}
+
+// Landscape
+@media(max-height: 550px) {
+  #header-home #header-content {
+    padding-top: 0%;
+  }
+
 }
