@@ -580,12 +580,9 @@ footer a i {
 #contact-form > form {
   padding-top: 1.2rem;
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name email" "subject phone" "message message" "btn-submit btn-submit";
   gap: 1.6rem;
-}
-#contact-form > form input,
-#contact-form > form textarea {
-  padding-left: 5px;
+  margin: auto;
 }
 #contact-form > form #form-name {
   grid-area: name;
@@ -603,10 +600,15 @@ footer a i {
   grid-area: message;
   height: 4rem;
 }
-#contact-form > .btn-dark {
+#contact-form > form #form-btn-submit {
+  grid-area: btn-submit;
   width: 50%;
   padding: 0.5rem;
-  margin: 1.3rem 1rem 3rem;
+  margin: 1rem auto;
+}
+#contact-form input,
+#contact-form textarea {
+  padding-left: 5px;
 }
 #contact-info {
   background-color: #333;
