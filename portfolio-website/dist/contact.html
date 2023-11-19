@@ -1,116 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://kit.fontawesome.com/14e8bf268e.js"
-			crossorigin="anonymous"
-		></script>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Dosis&family=Oswald&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./css/main.css" />
-		<title>Contact Me | FullStack Developer</title>
-	</head>
-	<body id="contact-body">
-		<!-- Header -->
-		<header id="header-contact">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/14e8bf268e.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Oswald&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/main.css" />
+	<title>Contact Me | FullStack Developer</title>
+</head>
+
+<body id="contact-body">
+	<!-- Header -->
+	<header id="header-contact">
+		<div class="container">
+			<nav id="main-nav">
+				<img src="./img/logo.png" id="logo" />
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html" class="nav-current">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Section A -->
+	<main id="contact-main">
+		<section id="contact-form" class="container">
+			<p class="section-title">CONTACT ME</p>
+			<div class="bottom-line"></div>
+			<p class="lead">You can reach me here</p>
+			<form>
+				<input type="text" name="name" id="form-name" placeholder="Name" />
+				<input type="email" name="email" id="form-email" placeholder="Email Address" />
+				<input type="text" name="subject" id="form-subject" placeholder="Subject" />
+				<input type="text" name="phone" id="form-phone" placeholder="Phone Number" />
+
+				<textarea type="textarea" name="message" id="form-message" placeholder="Enter Message"></textarea>
+			</form>
+			<input type="submit" value="Submit" class="btn btn-dark" />
+		</section>
+
+		<section id="contact-info">
 			<div class="container">
-				<nav id="main-nav">
-					<img src="./img/logo.png" id="logo" />
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="work.html">Work</a></li>
-						<li><a href="contact.html" class="nav-current">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-		<!-- Section A -->
-		<main id="contact-main">
-			<section id="contact-form" class="container">
-				<p class="section-title">CONTACT ME</p>
-				<div class="bottom-line"></div>
-				<p class="lead">You can reach me here</p>
-				<form>
-					<input type="text" name="name" id="form-name" placeholder="Name" />
-					<input
-						type="email"
-						name="email"
-						id="form-email"
-						placeholder="Email Address"
-					/>
-					<input
-						type="text"
-						name="subject"
-						id="form-subject"
-						placeholder="Subject"
-					/>
-					<input
-						type="text"
-						name="phone"
-						id="form-phone"
-						placeholder="Phone Number"
-					/>
-
-					<textarea
-						type="textarea"
-						name="message"
-						id="form-message"
-						placeholder="Enter Message"
-					></textarea>
-				</form>
-				<input type="submit" value="Submit" class="btn btn-dark" />
-			</section>
-
-			<section id="contact-info">
-				<div class="container">
-					<div>
-						<i class="fas fa-envelope fa-2x p-1"></i>
-						<p class="f-1">EMAIL</p>
-						<p class="f-2">Dor@gmail.com</p>
-					</div>
-					<div>
-						<i class="fas fa-phone fa-2x p-1"></i>
-						<p class="f-1">PHONE</p>
-						<p class="f-2">052-555-5555</p>
-					</div>
-					<div>
-						<i class="fas fa-address-card fa-2x p-1"></i>
-						<p class="f-1">ADDRESS</p>
-						<p class="f-2">Kiryat-Ata</p>
-					</div>
+				<div>
+					<i class="fas fa-envelope fa-2x"></i>
+					<p class="f-1">EMAIL</p>
+					<p class="f-2">Dor@gmail.com</p>
 				</div>
-			</section>
-
-			<section id="contact-last-line" class="f-4 py-3">
-				<div class="container">Lets Start Your Next Project!</div>
-			</section>
-		</main>
-
-		<footer>
-			<div class="container">
-				<p>Copyright 2023, All Right Reserved</p>
-				<div class="links">
-					<a href="http://www.twitter.com">
-						<i class="fa-brands fa-square-twitter"></i>
-					</a>
-					<a href="http://www.github.com">
-						<i class="fa-brands fa-square-github"></i>
-					</a>
-					<a href="http://www.facebook.com">
-						<i class="fa-brands fa-square-facebook"></i>
-					</a>
-					<a href="http://www.linkedin.com"> <i class="fab fa-linkedin"></i></a>
+				<div>
+					<i class="fas fa-phone fa-2x"></i>
+					<p class="f-1">PHONE</p>
+					<p class="f-2">052-555-5555</p>
+				</div>
+				<div>
+					<i class="fas fa-address-card fa-2x"></i>
+					<p class="f-1">ADDRESS</p>
+					<p class="f-2">Kiryat-Ata</p>
 				</div>
 			</div>
-		</footer>
-	</body>
+		</section>
+
+		<section id="contact-last-line" class="f-4 py-3">
+			<div class="container">Lets Start Your Next Project!</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>Copyright 2023, All Right Reserved</p>
+			<div class="links">
+				<a href="http://www.twitter.com">
+					<i class="fa-brands fa-square-twitter"></i>
+				</a>
+				<a href="http://www.github.com">
+					<i class="fa-brands fa-square-github"></i>
+				</a>
+				<a href="http://www.facebook.com">
+					<i class="fa-brands fa-square-facebook"></i>
+				</a>
+				<a href="http://www.linkedin.com"> <i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
