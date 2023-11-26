@@ -25,6 +25,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-family: "Roboto", sans-serif;
   width: 100%;
+  height: 100%;
   /* background-image: linear-gradient(
     to top left,
     #d2f8ac 0%,
@@ -188,6 +189,19 @@ a:hover .overlay {
   /* align-items: center; */
 }
 
+.f-1 {
+  font-size: 1rem;
+}
+
+.f-2 {
+  font-size: 1.2rem;
+}
+.f-3 {
+  font-size: 1.5rem;
+}
+.f-4 {
+  font-size: 1.8rem;
+}
 .main-title {
   margin: 1rem;
   font-size: 2.5rem;
@@ -213,6 +227,74 @@ footer .container .links {
 footer .container .links a:hover {
   color: var(--light-secondary-color);
 }
+/* Contact Page */
+#contact-body {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+#contact-main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+#contact-form {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+#contact-form,
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+#contact-form form input,
+#contact-form form textarea {
+  padding-left: 5px;
+  width: 50%;
+  padding: 0.5rem 0.3rem;
+}
+
+#contact-form form .btn-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+#contact-form form .btn-dark:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  color: var(--light-secondary-color);
+}
+#contact-info {
+  background-color: var(--secondary-color);
+  text-align: center;
+  align-items: center;
+  margin-top: 1.3rem;
+  width: 100%;
+}
+
+#contact-info > div {
+  align-items: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: center; */
+  padding: 1.3rem 1.5rem;
+  font-size: 1.3rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
 @media (max-width: 950px) {
   main > #titles {
     font-size: 1.4rem;
@@ -275,5 +357,25 @@ footer .container .links a:hover {
     font-size: 1.5rem;
     padding: 1.5rem 1.5rem 0;
     font-weight: 600;
+  }
+
+  #contact-info > div {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact-info > div > div {
+    padding: 0.5rem 0;
+    width: 95%;
+    border-bottom: 2px solid var(--light-color);
+  }
+  #contact-info > div > div:last-child {
+    border-bottom: none;
+  }
+
+  #contact-form form input,
+  #contact-form form textarea {
+    width: 70%;
   }
 }
