@@ -1,13 +1,14 @@
 :root {
   /* colors */
   --dark-color: #333;
-  --light-color: #fff;
+  /* --light-color: #fff; */
+  --light-color: #f4f4f4;
 
-  --primary-color: rgb(226, 226, 0);
-  --light-primary-color: rgb(255, 149, 10);
+  --primary-color: rgb(161, 0, 0);
+  --light-primary-color: rgb(255, 0, 0);
 
-  --secondary-color: rgb(161, 0, 0);
-  --light-secondary-color: rgb(255, 0, 0);
+  --secondary-color: rgb(226, 128, 0);
+  --light-secondary-color: rgb(255, 149, 10);
 
   --max-width: 1280px;
 }
@@ -20,18 +21,27 @@
 
 html,
 body {
+  font-family: "Dosis", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to top left,
     #d2f8ac 0%,
     #027cff 30%,
     #d2f8ac 100%
-  );
+  ); */
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 body {
   /* background-image: linear-gradient(to top , #d2f8ac 30%, #027cff 90%); */
 
   /* background-image: linear-gradient(#d2f8ac, #027cff); */
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -42,6 +52,30 @@ header {
   font-size: 1.8rem;
   font-weight: 600;
   /* padding: 1rem; */
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
+}
+
+header .header-links {
+  display: flex;
+}
+
+header .header-links a {
+  padding: 0.5rem;
+}
+header .header-links a:hover {
+  color: var(--light-secondary-color);
+}
+
+header .nav-current {
+  background-color: #555;
 }
 
 main {
@@ -61,7 +95,8 @@ main > #titles {
   text-align: center;
   align-items: center;
   padding: 1.5rem 1.5rem 0;
-  color: var(--light-color);
+  color: var(--dark-color);
+
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -112,7 +147,7 @@ main #projects > div {
 .overlay .website-name {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--light-secondary-color);
+  color: var(--light-primary-color);
 }
 
 .overlay .website-name span {
@@ -157,7 +192,27 @@ a:hover .overlay {
   margin: 1rem;
   font-size: 2.5rem;
 }
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+footer .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
 
+footer .container .links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  /* font-size: 2rem; */
+}
+
+footer .container .links a:hover {
+  color: var(--light-secondary-color);
+}
 @media (max-width: 950px) {
   main > #titles {
     font-size: 1.4rem;
@@ -189,6 +244,29 @@ a:hover .overlay {
 }
 
 @media (max-width: 550px) {
+  header > .container {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+  header .header-name {
+    background-color: var(--light-secondary-color);
+    color: var(--dark-color);
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  header > .container > .header-links {
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  footer .container {
+    flex-direction: column-reverse;
+    padding-bottom: 0.5rem;
+  }
+
   main #projects > div {
     display: flex;
     flex-direction: column;
