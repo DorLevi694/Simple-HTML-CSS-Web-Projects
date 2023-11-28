@@ -1,33 +1,37 @@
-## **Author: Dor Levi**
+## Author: Dor Levi
 
-### **This Repository contains a few projects and simple code samples of practice.**
+### Repository Overview:
 
-### From Html5 & Css course :
-
-## 'Modern HTML & CSS From The Beginning'
-
-### Link to my git repository : [_Simple-HTML-CSS-Web-Projects_](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects)
+This repository includes several projects and code samples for practice, taken from the 'Modern HTML & CSS From The Beginning' course.
 
 ---
 
-## The full projects that I did through this course
+### Course Source:
 
-- [x] [**Hotel Website**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/hotel-website-html-css)
+[**Modern HTML & CSS From The Beginning**](https://www.udemy.com/course/modern-html-css-from-the-beginning/)
 
-- [x] [**_EdgeLedger Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/EdgeLedger)
+### Course Certificate:
 
-- [x] [**_Presentation Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Presentation)
+I've earned a certificate for completing the 'Modern HTML & CSS From The Beginning' course. You can view the certificate file [**Modern_HTML_CSS_Certificate**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/Modern_HTML_CSS_Certificate.jpg)
 
-- [x] [**_Hamburger Menu_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Hamburger-Menu)
+### GitHub Repository Link:
 
-- [x] [**_Time Line_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/TimeLine)
+[**Simple-HTML-CSS-Web-Projects**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects)
 
-- [x] [**_DropDown Bar_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/DropDownBar)
+### Deployment:
 
-- [x] [**_News Website_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/news-website)
+I have deployed the projects to Netlify's cloud. [**Explore the deployed projects here**](https://dor-levi.netlify.app)
 
-- [x] [**_Portfolio Website(Fake)_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/portfolio-website)
+---
 
-- [x] [**_Portfolio Website(Real)_**](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master)
+## Projects from the Course:
 
-
+- [x] [Hotel Website](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/hotel-website-html-css)
+- [x] [EdgeLedger Website](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/EdgeLedger)
+- [x] [Presentation Website](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Presentation)
+- [x] [Hamburger Menu](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/Hamburger-Menu)
+- [x] [Time Line](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/TimeLine)
+- [x] [DropDown Bar](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/DropDownBar)
+- [x] [News Website](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/news-website)
+- [x] [Portfolio Website (Fake)](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master/portfolio-website)
+- [x] [Portfolio Website (Real)](https://github.com/DorLevi694/Simple-HTML-CSS-Web-Projects/tree/master)
