@@ -22,7 +22,7 @@ I've earned a certificate for completing the 'Modern HTML & CSS From The Beginni
 
 I have deployed the projects to Netlify's cloud. [**Explore the deployed projects here**](https://dor-levi.netlify.app)
 
----
+## [![Netlify Status](https://api.netlify.com/api/v1/badges/35672899-33d4-4d96-93c8-0a6d78d9cc69/deploy-status)](https://app.netlify.com/sites/dor-levi/deploys)
 
 ## Projects from the Course:
 
